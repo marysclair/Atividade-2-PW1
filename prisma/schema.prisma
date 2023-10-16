@@ -6,8 +6,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./dev.db"
 }
 
 model User {
@@ -21,8 +21,8 @@ model Technology {
   id        String   @id @default(uuid())
   title     String
   studied   Boolean  @default(false)
-  deadline  DateTime @db.Date
-  createdAt DateTime @default(now()) @db.Date
+  deadline  DateTime
+  createdAt DateTime @default(now())
 
   User   User?   @relation(fields: [userId], references: [id])
   userId String?
