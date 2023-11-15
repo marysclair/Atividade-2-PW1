@@ -1,8 +1,7 @@
-export interface Tecnology{
+export interface Technology{
   id: string;
   title: string;
   studied: boolean;
   deadline: Date;
   createdAt: Date;
-  userId: string | null
 }
