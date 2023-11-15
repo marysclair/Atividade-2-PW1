@@ -1,5 +1,5 @@
 import express from 'express'
-import { checkExistsUserAccount } from '../controller/Middleware' 
+import { checkExistsUserAccount } from '../middleware/Middleware' 
 import { createTechnology, deleteTechnology, getAllTechnologies, patchTechnology, updateTechnology } from '../controller/TechnologyController'
 
 
