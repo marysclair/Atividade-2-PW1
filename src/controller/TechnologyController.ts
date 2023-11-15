@@ -127,9 +127,9 @@ export async function deleteTechnology(req: Request, res: Response){
 
             if(technology){
                 deleteUserTechnology(user, technology)
-                return res.status(200).send({error: 'Technology deleted successfully.'})
+                return res.status(200).send({error: 'Technology deleted successfully'})
             } else{
-                return res.status(404).send({error: 'Technology not exists.'})
+                return res.status(404).send({error: 'Technology not exists'})
             }
         } catch(error){
             console.log(console.error(error))

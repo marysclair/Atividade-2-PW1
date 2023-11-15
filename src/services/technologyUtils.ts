@@ -14,6 +14,7 @@ export function findUniqueUserTechnology(user: User, id: string){
 
     return foundTechnology
 }
+
 export function findManyUserTechnologies(user: User){
     return user.technologies
 }
